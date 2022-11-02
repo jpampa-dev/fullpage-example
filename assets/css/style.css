@@ -1,0 +1,26 @@
+.menu-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+.menu-header .active{
+    background-color: orange;
+}

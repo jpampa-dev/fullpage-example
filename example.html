@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="menu-header">
+        <ul id="menu" class="menu">
+            <li><a data-menuanchor="primeraSeccion" href="#primeraSeccion">Primera seccion</a></li>
+            <li><a data-menuanchor="segundaSeccion" href="#segundaSeccion">Segunda seccion</a></li>
+            <li><a data-menuanchor="terceraSeccion" href="#terceraSeccion">Tercera seccion</a></li>
+        </ul>
+    </nav>
+    
+    <div id="fullpage">
+        <div class="section">
+            <div>
+                <br>
+                <br>
+                <h1>Primera seccion</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo nesciunt labore illum accusantium, harum totam fugiat, corporis fuga, velit porro vero facere. Tempora doloremque placeat recusandae tenetur consequatur ipsam.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <br>
+                <br>
+                <h1>Segunda seccion</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo nesciunt labore illum accusantium, harum totam fugiat, corporis fuga, velit porro vero facere. Tempora doloremque placeat recusandae tenetur consequatur ipsam.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <br>
+                <br>
+                <h1>Tercera seccion</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo nesciunt labore illum accusantium, harum totam fugiat, corporis fuga, velit porro vero facere. Tempora doloremque placeat recusandae tenetur consequatur ipsam.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            menu: '#menu',
+            anchors: ['primeraSeccion', 'segundaSeccion', 'terceraSeccion'],
+            autoScrolling: false,
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        });
+    </script>
+</body>
+</html>
